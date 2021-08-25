@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fastoncoming/tela1.dart';
 import 'package:fastoncoming/tela2.dart';
 import 'package:fastoncoming/tela3.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -30,37 +31,50 @@ class MyApp extends StatelessWidget {
               ),
               Center(
                 child: Container(
-                  height: 280,
-                  width: 320,
-                  color: Colors.grey,
-                  child: Text("Logo aqui"),
+                  height: 240,
+                  width: 400,
+                  color: Color.fromARGB(255, 92, 198, 186),
+                  child: new Image.asset(
+                    'image/logo.jpg'
+                  ),
                 ),
               ),
-              SizedBox(
-                height: 40,
-              ),
-              Center(
+              /*Center(
                 child: Container(
-                  height: 80,
-                  width: 80,
+                  height: 40,
+                  width: 150,
                   color: Colors.grey,
-                  child: Text("Carregador aqui"),
+                  child: Text("Deseja se cadastrar?",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                      color: Colors.white70,
+                      letterSpacing: .5,
+                      fontSize: 16),
+                  )
+  
+                  ),
                 ),
-              ),
+              ),*/
               SizedBox(
                 height: 80,
               ),
               SizedBox(
                 height: 40,
-                width: 100,
+                width: 200,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => TelaUm()));
                   },
-                  child: Text(
-                    'Pt-Br',
-                    style: TextStyle(color: Colors.black, fontSize: 22),
+                  child: Text("Cadastre-se!",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                      color: Colors.white70,
+                      letterSpacing: .5,
+                      fontSize: 16),
+                    )
                   ),
                   style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -76,15 +90,20 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 40,
-                width: 100,
+                width: 200,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) => TelaDois()));
                   },
-                  child: Text(
-                    'En-Us',
-                    style: TextStyle(color: Colors.black, fontSize: 22),
+                  child: Text("Acesse o app",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.roboto(
+                    textStyle: TextStyle(
+                      color: Colors.white70,
+                      letterSpacing: .5,
+                      fontSize: 16),
+                    )
                   ),
                   style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
