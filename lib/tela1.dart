@@ -1,3 +1,4 @@
+import 'package:fastoncoming/telaMap.dart';
 import 'package:flutter/material.dart';
 import 'package:fastoncoming/tela2.dart';
 
@@ -78,8 +79,9 @@ class _TelaUmState extends State<TelaUm> {
                 title: Text("Hospitais/UBS próximos"),
                 trailing: Icon(Icons.arrow_forward),
                 onTap: () {
-                  Navigator.pop(context);
-                }
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => TelaMap()));
+                },
               )
             ],
            )
