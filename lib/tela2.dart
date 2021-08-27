@@ -6,6 +6,16 @@ class TelaDois extends StatefulWidget {
 }
 
 class _TelaDoisState extends State<TelaDois> {
+
+  bool _obscureText = true;
+
+  // Toggles the password show status
+  void _toggle() {
+    setState(() {
+      _obscureText = !_obscureText;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,10 +28,10 @@ class _TelaDoisState extends State<TelaDois> {
             ),
             Center(
               child: Container(
-                height: 280,
-                width: 320,
-                color: Colors.grey,
-                child: Text("Logo aqui"),
+                color: Color.fromARGB(255, 92, 198, 186),
+                child: new Image.asset(
+                   'image/logo.jpg', width: 100, height: 100,
+                ),
               ),
             ),
             SizedBox(
@@ -29,49 +39,133 @@ class _TelaDoisState extends State<TelaDois> {
             ),
             Center(
               child: Container(
-                height: 80,
-                width: 80,
-                color: Colors.grey,
-                child: Text("Carregador aqui"),
-              ),
-            ),
-            SizedBox(
-              height: 80,
-            ),
-            SizedBox(
-              height: 40,
-              width: 100,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  'Pt-Br',
-                  style: TextStyle(color: Colors.black, fontSize: 22),
-                ),
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
+                width: 250,
+                height: 50,
+                child: 
+                  TextFormField(
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 92, 198, 186)),
+                    decoration: InputDecoration(
+                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: "Nome",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
+                      prefixIcon: const Icon(
+                        Icons.person,
+                        color: Color.fromARGB(255, 92, 198, 186),
+                      ),
                     ),
                   ),
-                ),
+
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 15,
             ),
+            Center(
+              child: Container(
+                width: 250,
+                height: 50,
+                child: 
+                  TextFormField(
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 92, 198, 186)),
+                    decoration: InputDecoration(
+                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: "E-mail",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
+                      prefixIcon: const Icon(
+                        Icons.email,
+                        color: Color.fromARGB(255, 92, 198, 186),
+                      ),
+                    ),
+                  ),
+
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Center(
+              child: Container(
+                width: 250,
+                height: 50,
+                child: 
+                  TextFormField(
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 92, 198, 186)),
+                    decoration: InputDecoration(
+                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: "Telefone",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
+                      prefixIcon: const Icon(
+                        Icons.phone,
+                        color: Color.fromARGB(255, 92, 198, 186),
+                      ),
+                    ),
+                  ),
+
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Center(
+              child: Container(
+                width: 250,
+                height: 50,
+                child: 
+                  TextFormField(
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 92, 198, 186)),
+                    decoration: InputDecoration(
+                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
+                      filled: true,
+                      fillColor: Colors.white,
+                      hintText: "Senha",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
+                      prefixIcon: const Icon(
+                        Icons.password,
+                        color: Color.fromARGB(255, 92, 198, 186),
+                      ),
+                    ),
+                    obscureText: _obscureText,
+                  ),
+                  
+
+              ),
+              
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            
             SizedBox(
               height: 40,
               width: 100,
               child: ElevatedButton(
                 onPressed: () {},
                 child: Text(
-                  'En-Us',
-                  style: TextStyle(color: Colors.black, fontSize: 22),
+                  'Cadastrar',
+                  style: TextStyle(color: Colors.white, fontSize: 14),
                 ),
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
+                      borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
                 ),

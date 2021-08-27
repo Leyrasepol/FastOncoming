@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => TelaUm()));
+                        MaterialPageRoute(builder: (context) => TelaDois()));
                   },
                   child: Text("Cadastre-se!",
                   textAlign: TextAlign.center,
@@ -94,7 +94,7 @@ class MyApp extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => TelaDois()));
+                        MaterialPageRoute(builder: (context) => TelaUm()));
                   },
                   child: Text("Acesse o app",
                   textAlign: TextAlign.center,
