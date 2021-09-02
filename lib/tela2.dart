@@ -6,7 +6,6 @@ class TelaDois extends StatefulWidget {
 }
 
 class _TelaDoisState extends State<TelaDois> {
-
   bool _obscureText = true;
 
   // Toggles the password show status
@@ -30,7 +29,9 @@ class _TelaDoisState extends State<TelaDois> {
               child: Container(
                 color: Color.fromARGB(255, 92, 198, 186),
                 child: new Image.asset(
-                   'image/logo.jpg', width: 100, height: 100,
+                  'image/logo.jpg',
+                  width: 100,
+                  height: 100,
                 ),
               ),
             ),
@@ -41,25 +42,25 @@ class _TelaDoisState extends State<TelaDois> {
               child: Container(
                 width: 250,
                 height: 50,
-                child: 
-                  TextFormField(
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 92, 198, 186)),
-                    decoration: InputDecoration(
-                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: "Nome",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
-                      prefixIcon: const Icon(
-                        Icons.person,
+                child: TextFormField(
+                  style: TextStyle(color: Color.fromARGB(255, 92, 198, 186)),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(
                         color: Color.fromARGB(255, 92, 198, 186),
-                      ),
+                        fontSize: 14.0),
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "Nome",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide:
+                            BorderSide(color: Colors.white24, width: 0.2)),
+                    prefixIcon: const Icon(
+                      Icons.person,
+                      color: Color.fromARGB(255, 92, 198, 186),
                     ),
                   ),
-
+                ),
               ),
             ),
             SizedBox(
@@ -69,25 +70,25 @@ class _TelaDoisState extends State<TelaDois> {
               child: Container(
                 width: 250,
                 height: 50,
-                child: 
-                  TextFormField(
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 92, 198, 186)),
-                    decoration: InputDecoration(
-                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: "E-mail",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
-                      prefixIcon: const Icon(
-                        Icons.email,
+                child: TextFormField(
+                  style: TextStyle(color: Color.fromARGB(255, 92, 198, 186)),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(
                         color: Color.fromARGB(255, 92, 198, 186),
-                      ),
+                        fontSize: 14.0),
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "E-mail",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide:
+                            BorderSide(color: Colors.white24, width: 0.2)),
+                    prefixIcon: const Icon(
+                      Icons.email,
+                      color: Color.fromARGB(255, 92, 198, 186),
                     ),
                   ),
-
+                ),
               ),
             ),
             SizedBox(
@@ -97,25 +98,25 @@ class _TelaDoisState extends State<TelaDois> {
               child: Container(
                 width: 250,
                 height: 50,
-                child: 
-                  TextFormField(
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 92, 198, 186)),
-                    decoration: InputDecoration(
-                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: "Telefone",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
-                      prefixIcon: const Icon(
-                        Icons.phone,
+                child: TextFormField(
+                  style: TextStyle(color: Color.fromARGB(255, 92, 198, 186)),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(
                         color: Color.fromARGB(255, 92, 198, 186),
-                      ),
+                        fontSize: 14.0),
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "Telefone",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide:
+                            BorderSide(color: Colors.white24, width: 0.2)),
+                    prefixIcon: const Icon(
+                      Icons.phone,
+                      color: Color.fromARGB(255, 92, 198, 186),
                     ),
                   ),
-
+                ),
               ),
             ),
             SizedBox(
@@ -125,34 +126,31 @@ class _TelaDoisState extends State<TelaDois> {
               child: Container(
                 width: 250,
                 height: 50,
-                child: 
-                  TextFormField(
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 92, 198, 186)),
-                    decoration: InputDecoration(
-                      hintStyle: TextStyle(color: Color.fromARGB(255, 92, 198, 186), fontSize: 14.0),
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: "Senha",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                        borderSide: BorderSide(color: Colors.white24, width: 0.2)),
-                      prefixIcon: const Icon(
-                        Icons.password,
+                child: TextFormField(
+                  style: TextStyle(color: Color.fromARGB(255, 92, 198, 186)),
+                  decoration: InputDecoration(
+                    hintStyle: TextStyle(
                         color: Color.fromARGB(255, 92, 198, 186),
-                      ),
+                        fontSize: 14.0),
+                    filled: true,
+                    fillColor: Colors.white,
+                    hintText: "Senha",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        borderSide:
+                            BorderSide(color: Colors.white24, width: 0.2)),
+                    prefixIcon: const Icon(
+                      Icons.password,
+                      color: Color.fromARGB(255, 92, 198, 186),
                     ),
-                    obscureText: _obscureText,
                   ),
-                  
-
+                  obscureText: _obscureText,
+                ),
               ),
-              
             ),
             SizedBox(
               height: 40,
             ),
-            
             SizedBox(
               height: 40,
               width: 100,

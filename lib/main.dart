@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
                 width: 200,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(context,
+                    Navigator.push(context,
                         MaterialPageRoute(builder: (context) => TelaDois()));
                   },
                   child: Text("Cadastre-se!",
