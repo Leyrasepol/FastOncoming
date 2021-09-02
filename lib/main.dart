@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fastoncoming/tela1.dart';
 import 'package:fastoncoming/tela2.dart';
-import 'package:fastoncoming/tela3.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -34,28 +33,9 @@ class MyApp extends StatelessWidget {
                   height: 240,
                   width: 400,
                   color: Color.fromARGB(255, 92, 198, 186),
-                  child: new Image.asset(
-                    'image/logo.jpg'
-                  ),
+                  child: new Image.asset('image/logo.jpg'),
                 ),
               ),
-              /*Center(
-                child: Container(
-                  height: 40,
-                  width: 150,
-                  color: Colors.grey,
-                  child: Text("Deseja se cadastrar?",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      color: Colors.white70,
-                      letterSpacing: .5,
-                      fontSize: 16),
-                  )
-  
-                  ),
-                ),
-              ),*/
               SizedBox(
                 height: 80,
               ),
@@ -68,14 +48,13 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => TelaDois()));
                   },
                   child: Text("Cadastre-se!",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      color: Colors.white70,
-                      letterSpacing: .5,
-                      fontSize: 16),
-                    )
-                  ),
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(
+                            color: Colors.white70,
+                            letterSpacing: .5,
+                            fontSize: 16),
+                      )),
                   style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
@@ -97,14 +76,13 @@ class MyApp extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => TelaUm()));
                   },
                   child: Text("Acesse o app",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.roboto(
-                    textStyle: TextStyle(
-                      color: Colors.white70,
-                      letterSpacing: .5,
-                      fontSize: 16),
-                    )
-                  ),
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(
+                            color: Colors.white70,
+                            letterSpacing: .5,
+                            fontSize: 16),
+                      )),
                   style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
